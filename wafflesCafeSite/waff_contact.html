@@ -1,0 +1,137 @@
+<!--This is the contact page-->
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link  href="images/wafficon.ico" rel="shortcut icon" /> 
+	<title>The Wafflez Caf&eacute; - Contact Us</title>
+	<!--Boostrap Link-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<!--Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Carter+One|Fredoka+One|Martel" rel="stylesheet">
+	<link href="waff_layout.css" rel="stylesheet">
+	<link href="waff_contact.css" rel="stylesheet">
+	<script src="waff_contact.js" defer></script>
+</head>
+<body>
+	
+	<header>
+		<a href="waff_home.html"><img id="homeIcon"src="images/home_icon.svg" alt="home icon"></a>
+		<img src="images/waffle_logo.png" alt="logo">
+	</header>
+	
+	<nav id="horizontal">
+		<ul>
+			<a href="waff_home.html"><li class="link">About Us</li></a>
+			<a href="waff_menu.html"><li class="link">Menu</li></a>
+			<a href="waff_order.html"><li class="link">Order Online</li></a>
+			<a href="waff_contact.html"><li class="link">Contact Us</li></a>
+		</ul>
+	</nav>
+	
+	<div class="container">
+	  <h1>Contact Us</h1>
+		<div class="row">
+		
+			<!-- Call Us -->
+			<div class="col-lg-4 col-lg">
+			  <h2>Call Us:</h2>
+			  <img src="images/phone_icon.png" alt="phone" style="width: 100px; vertical-align:inherit;">
+				<p style="vertical-align:middle; font-size: 25px; font-weight: bold;">(212)555-5123</style>
+			</div>
+		
+			<!--Email Us-->
+			<div class="col-lg-4 col-lg">
+			  <h2>Email Us:</h2>
+			  <img src="images/email_icon.png" alt="email" style="width: 100px;">
+			  <p  style="vertical-align:middle; font-size: 25px; font-weight: bold;">wafflezcafe@mail4.us</style>
+			</div>
+		
+			<!--Address/Location-->
+			<div id="location" class="col-lg-4 col-lg">
+			  <h2>Visit Us:</h2>
+				<a href=https://www.google.com/maps/place/21+W+17th+St,+New+York,+NY+10011/data=!4m2!3m1!1s0x89c259a2c2bf058b:0x26aaae81ec42577a?ved=2ahUKEwiD3Yqm4uPfAhVkneAKHS4LBFYQ8gEwAHoECAAQAQ><img src="images/map_nyc.png" alt="map" style="width: 85px; vertical-align:inherit;"></a>
+				<address style="vertical-align:middle; font-size: 25px; font-weight: bold;"> 
+				  The Wafflez Caf&eacute;<br/>
+				  21 W 17th St<br/>
+				  New York, NY 10011
+				</address>
+			</div>
+		
+			<!--Business Hours -->
+			<div class="col-lg-6 col-lg">
+			  <h2>Business Hours:</h2>
+				 <table class="table table-striped" style="padding-left: 0px; vertical-align:middle; font-size: 15px; font-weight: bold; ">
+				<tbody>
+					<tr>
+						<td class="tableBorder">Sunday</td>
+						<td class="tableBorder tableR">6:00AM-10:00PM</td>
+					</tr>
+					
+					<tr>	
+						<td class="tableBorder">Monday</td>
+						<td class="tableBorder tableR">7:00AM-10:00PM</td>
+					</tr>
+					
+					<tr>	
+						<td class="tableBorder">Tuesday</td>
+						<td class="tableBorder tableR">7:00AM-10:00PM</td>
+					</tr>
+					
+					<tr>
+						<td class="tableBorder">Wednesday</td>
+						<td class="tableBorder tableR">7:00AM-10:00PM</td>
+					</tr>
+					
+					<tr>
+						<td class="tableBorder">Thursday</td>
+						<td class="tableBorder tableR">7:00AM-11:00PM</td>
+					</tr>
+					
+					<tr>
+						<td class="tableBorder">Friday</td>
+						<td class="tableBorder tableR">6:00AM-12:00AM</td>
+					</tr>
+					
+					<tr>
+						<td class="tableBottomBorder tableBorder">Saturday</td>
+						<td class="tableBottomBorder tableBorder tableR">6:00AM-12:00AM</td>
+					</tr>
+				
+				</tbody>
+			  </table>
+	
+			</div>
+			
+			<!--Feedback-->
+			<div class="col-lg-6 col-lg">
+				<h2>Feedback:</h2>
+				<form>
+					<label class="labelText"  for="name" style="margin-top:0px"; >Name:</label>
+					<input class="form-control" id="name" type="text" placeholder="Enter your first and last name" style="width: 80%;"></input>
+					<label class="labelText" for="email">Email:</label>
+					<input class="form-control" id="email" type="email"  style="width: 80%;" placeholder="emailaddress@example.com"></input>
+					<label class="labelText"for="feedback">Feeeback/Reviews/Comments:</label>
+					<textarea class="form-control" rows="5" id="feedback" style="width: 90%;" ></textarea>
+					<br/>
+					<button id="submit" type="submit" class="btn btn-default">Submit</button>
+				</form>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+	<footer>
+		<div id="social">
+			Follow Us On:
+			<a href="https://www.facebook.com"><img class="socialIcon" src="images/facebook_icon.svg" alt="facebook icon"></a> Facebook 
+			<a href="https://www.twitter.com"><img class="socialIcon" src="images/twitter_icon.svg" alt="twitter icon"></a> Twitter 
+			<a href="https://www.instagram.com"><img class="socialIcon" src="images/instagram_icon.svg" alt="twitter icon"></a> Instagram 
+			<a href="https://www.pinterest.com"><img class="socialIcon" src="images/pinterest_icon.svg" alt="pinterest icon"></a> Pinterest 
+		</div>
+		Copyright &copy; 2019, The Wafflez Caf&eacute;. All Rights Reserved 
+	</footer>
+</body>
+</html>

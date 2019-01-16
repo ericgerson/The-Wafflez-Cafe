@@ -1,0 +1,167 @@
+/* 
+	The Wafflez Cafe style sheet
+	
+	Name:Eric Gerson
+	Date: 1/8/19
+	
+	filename: waff_menu.css
+*/
+
+/* ------------------------
+Menu Page
+-------------------------- */
+
+div.col-lg-6 {
+	text-align:left;
+	background: linear-gradient(to bottom, #ff9900 0%, #ffffcc 125%);
+	border-left: 1px solid black;
+	border-top: 1px solid black; 
+	border-bottom:none;
+}
+
+
+div.col-lg-6 h3{
+	text-align:center;
+	margin: 5px 5px 2px 5px;
+	font-size: 26px;
+
+}
+
+div.col-lg-6 > ul {
+	border:1px solid black;
+	border-radius: 15px;
+	padding-left:20px;
+	padding-bottom: 5px;
+	text-align:center;
+	font-size: 25px;
+	list-style-type:none;
+	background: url(images/waffle_list_background.jpg) center no-repeat;
+	color:yellow;
+	text-shadow: 2px 3px 5px black;
+	font-weight:bold;
+	line-height:1.25em;
+	height:450px;
+	
+}
+
+div.col-lg-6 > ul.drinks {
+	background: url(images/drink_list_background.jpg) center/cover no-repeat;
+	color:yellow;
+	list-style-type: inherit; 
+	padding-left: 33px;
+}
+
+div.col-lg-12{
+	text-align:left;
+	background: linear-gradient(to bottom, #ff9900 0%, #ffffcc 125%);
+	border-top: 1px solid black;
+
+}
+
+div.col-lg-12 h3{
+	text-align:center;
+	margin: 5px 5px 2px 5px;
+	font-size: 26px;
+
+}
+
+div.col-lg-12 > ul {
+	border:1px solid black;
+	border-radius: 15px;
+	padding-left:20px;
+	padding-bottom: 5px;
+	text-align:center;
+	font-size: 25px;
+	list-style-type:none;
+	background: url(images/waffle_toppings.jpg) center/cover no-repeat;
+	color:yellow;
+	text-shadow: 2px 3px 5px black;
+	font-weight:bold;
+	line-height:1.25em;
+}
+span#premium {
+	color:red;
+	font-weight:bold;
+}
+
+button.btn{
+	
+	width: 100%;
+}
+
+/* -----------------------------
+  Mobile Styles: 0px to 480px
+  ------------------------------
+*/
+@media only screen and (max-width: 480px){
+	
+	div#foodmenu{
+		display:none;
+	}	
+	
+	div#drinkmenu{
+		display:none;
+	}
+	div.col-lg-6.waffles ul li{
+		
+		font-size: 40px;
+	}
+}
+/* --------------------------------
+  Tablet Styles: 481px and greater
+  ----------------------------------
+*/
+
+@media only screen and (min-width: 480px){
+	
+	div#foodmenu{
+		display:none;
+	}	
+	
+	div#drinkmenu{
+		display:none;
+	}
+	
+	div.col-lg-6.waffles ul li{
+		
+		font-size: 40px;
+	}
+
+	div.col-lg-6.hotdrinks ul li{
+		
+		font-size: 27px;
+	}
+	
+	div.col-lg-6.colddrinks ul li{
+		
+		font-size: 33px;
+	}
+	
+}
+
+
+/*-----------------------------------
+   Desktop Styles: 769px and greater
+   -----------------------------------
+*/
+
+@media only screen and (min-width: 769px){
+	
+	div#foodmenu{
+		display:block;
+	}	
+	
+	div#drinkmenu{
+		display:block;
+	}
+	
+	div.col-lg-6.hotdrinks ul li{
+		
+		font-size: 25px;
+	}
+	
+	div.col-lg-6.colddrinks ul li{
+		
+		font-size: 34px;
+	}
+}

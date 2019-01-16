@@ -1,0 +1,98 @@
+/* 
+	The Wafflez Cafe style sheet
+	
+	Name:Eric Gerson
+	Date: 1/8/19
+	
+	filename: waff_home.css
+*/
+
+/* ------------------------
+About Us Page
+-------------------------- */
+
+h1{
+	padding: 0px 15px;
+}
+div.container{
+	background:linear-gradient(to bottom, #ff9900 0%, #ffffcc 125%);
+	border: 1px solid black;
+}
+
+div.col-lg-6 > p{
+	text-align: justify;
+}
+
+div.container img{
+	box-shadow: 3px 3px 5px Black;
+}
+
+img#mainimage1{
+	width: 410px;
+}
+
+img#mainimage2{
+	width: 425px; 
+	box-shadow: -3px -3px 5px black;
+}
+
+div.row-lg-2 img#gal1 {
+
+width: 200px;
+	
+}
+
+/* -----------------------------
+  Mobile Styles: 0px to 480px
+  ------------------------------
+*/
+@media only screen and (max-width: 480px){
+	
+	img#mainimage1{
+		width: 300px;
+		margin-left: 5px;
+		float: right;
+
+	}
+	
+	img#mainimage2{
+		width: 300px;
+		margin-top: 10px;
+		margin-left: 10px;
+		float:left
+		
+	
+	}
+	
+	img.gallery{
+		display:none;
+	}
+}
+
+
+/* --------------------------------
+  Tablet Styles: 481px and greater
+  ----------------------------------
+*/
+
+@media only screen and (min-width: 480px){
+	
+	
+	img.gallery{
+		display:none;
+	}
+}
+
+
+/*-----------------------------------
+   Desktop Styles: 769px and greater
+   -----------------------------------
+*/
+
+@media only screen and (min-width: 769px){
+	
+	
+	img.gallery{
+		display:block;
+	}
+}

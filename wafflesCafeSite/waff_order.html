@@ -1,0 +1,242 @@
+<!--This is the order form page-->
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link  href="images/wafficon.ico" rel="shortcut icon" /> 
+	<title>The Wafflez Caf&eacute; - Order Online </title>
+	<!--Boostrap Link-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> 
+	<!--Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Carter+One|Fredoka+One|Martel" rel="stylesheet">
+	<link href="waff_layout.css" rel="stylesheet">
+	<link href="waff_order.css" rel="stylesheet">
+	<script src="waff_order.js" defer></script>
+</head>
+<body>
+	
+	<header>
+		<a href="waff_home.html"><img id="homeIcon"src="images/home_icon.svg" alt="home icon"></a>
+		<img src="images/waffle_logo.png" alt="logo">
+	</header>
+	
+	<nav id="horizontal">
+		<ul>
+			<a href="waff_home.html"><li class="link">About Us</li></a>
+			<a href="waff_menu.html"><li class="link">Menu</li></a>
+			<a href="waff_order.html"><li class="link">Order Online</li></a>
+			<a href="waff_contact.html"><li class="link">Contact Us</li></a>
+		</ul>
+	</nav>
+	
+	<div class="container">
+	<h1>Order Online</h1>
+	</div>
+	
+	
+	<form>
+		
+		<div class="form-group row">
+		
+		<fieldset  class="form-border col-lg-6" id="custInfo">
+		<h3>Customer Information</h3>
+			<label for="firstname">First Name</label>
+			<input name="name" id="firstname" type="text" class="form-control col-lg-8 col" placeholder="First name" required></input>
+		
+			<label for="lastname">Last Name</label>
+			<input name="lastname" id="lastname" type="text" class="form-control col-lg-8 col" placeholder="Last name"required></input>
+			
+			<label for="lastname">Email Address</label>
+			<input name="lastname" id="email" type="email" class="form-control col-lg-8 col" placeholder="emailadresss@example.com" required></input>
+			
+			<label for="phnumber">Phone Number</label>
+			<input name="phonenumber" id="phnumber" type="tel" class="form-control col-lg-4 col"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="###-###-####" maxlength="12" required></input>
+			
+			<label for="address">Street Address</label>
+			<input name="address" id="address" type="text" class="form-control col-lg-8 col" placeholder="Street Address" required></input>
+			
+			<label for="city">City</label>
+			<input name="city" id="city" type="text" class="form-control col-lg-8 col" placeholder="City" required></input>
+			
+			<label for="state">State</label>	
+			<select class="form-control col-lg-2 col">
+				<option value="">..</option>
+				<option value="AL">AL</option>
+				<option value="AK">AK</option>
+				<option value="AR">AR</option>	
+				<option value="AZ">AZ</option>
+				<option value="CA">CA</option>
+				<option value="CO">CO</option>
+				<option value="CT">CT</option>
+				<option value="DC">DC</option>
+				<option value="DE">DE</option>
+				<option value="FL">FL</option>
+				<option value="GA">GA</option>
+				<option value="HI">HI</option>
+				<option value="IA">IA</option>	
+				<option value="ID">ID</option>
+				<option value="IL">IL</option>
+				<option value="IN">IN</option>
+				<option value="KS">KS</option>
+				<option value="KY">KY</option>
+				<option value="LA">LA</option>
+				<option value="MA">MA</option>
+				<option value="MD">MD</option>
+				<option value="ME">ME</option>
+				<option value="MI">MI</option>
+				<option value="MN">MN</option>
+				<option value="MO">MO</option>	
+				<option value="MS">MS</option>
+				<option value="MT">MT</option>
+				<option value="NC">NC</option>	
+				<option value="NE">NE</option>
+				<option value="NH">NH</option>
+				<option value="NJ">NJ</option>
+				<option value="NM">NM</option>			
+				<option value="NV">NV</option>
+				<option value="NY">NY</option>
+				<option value="ND">ND</option>
+				<option value="OH">OH</option>
+				<option value="OK">OK</option>
+				<option value="OR">OR</option>
+				<option value="PA">PA</option>
+				<option value="RI">RI</option>
+				<option value="SC">SC</option>
+				<option value="SD">SD</option>
+				<option value="TN">TN</option>
+				<option value="TX">TX</option>
+				<option value="UT">UT</option>
+				<option value="VT">VT</option>
+				<option value="VA">VA</option>
+				<option value="WA">WA</option>
+				<option value="WI">WI</option>	
+				<option value="WV">WV</option>
+				<option value="WY">WY</option>
+			</select>		
+
+			<label for="zip">Zip Code</label>
+			<input name="zip" id="zip" type="text" class="form-control col-lg-3 col" placeholder="#####" pattern="^\d{5}$" maxlength="5" required></input>
+			
+		</fieldset>
+		
+		
+		<fieldset  class="form-border col-lg-6" id="orderInfo">
+		<h3>Order Information</h3>
+		<h5><label for="waffletype">Step 1: Select your waffle type</label></h5>
+		<div>
+			<input type="checkbox" id="classic" name="classic" value="6.99" ></input>
+			<label for="classic">Classic Waffles (3) $6.99</input>
+		</div>
+		
+		<div>
+			<input type="checkbox" id="belgian" name="belgian" value="7.99"></input>
+			<label for="belgian">Belgian Waffles (3) $7.99</input>
+		</div>
+		
+		<div>
+			<input type="checkbox" id="wholegrain"name="wholegrain" value="8.99"></input>
+			<label for="wholegrain">Whole Grain Waffles (3) $8.99</input>
+		</div>
+	
+			
+		<h5><label for="waffleflavor">Step 2: Select your waffle flavor</label></h5>
+			<label for="flavor">Your waffle flavor:</label>
+			<select id="flavor" class="form-control col-lg-6 col" >
+					<option value="flavor">---Choose a flavor---</option>
+					<option value="chococlatechip">Chocolate Chip Waffles</option>
+					<option value="nutella">Nutella Waffles</option>
+					<option value="strawberry">Strawberry Waffles</option>
+					<option value="blueberry">Blueberry Waffles</option>
+					<option value="pumpkin">Pumpkin Waffles</option>
+					<option value="cinnamonbun">Cinnamon Bun Waffles</option>
+					<option value="frenchtoast">French Toast Waffles</option>
+					<option value="banana">Banana Waffles</option>
+					<option value="redvelvet">Red Velvet Waffles</option>
+					<option value="oreo">Oreo Waffles</option>
+					<option value="peanutbutter">Peanut Butter Waffles</option>
+					<option value="browniebatter">Brownie Batter Waffles</option>
+					<option value="dayflavor" id="dayFlavor"></option>
+			</select>
+			
+		<h5><label for="waffletoppings">Step 3: Select your waffle toppings</label></h5>
+			<label for="toppings">Your waffle toppings:</label>
+			<select id="toppings" multiple class="form-control col-lg-8 col">
+					<option value="topping" disabled>---Choose toppings---</option>
+					<optgroup label="Complimentary toppings">
+						<option value="butter">Butter</option>
+						<option value="syrup">Maple Syrup</option>
+						<option value="sprinkles">Sprinkles</option>
+						<option value="honey">Honey</option>
+						<option value="sugar">Powdered Sugar</option>
+						<option value="cinnamonsugar">Cinnamon Sugar</option>
+						<option value="strawberry">Strawberries</option>
+						<option value="bananas">Bananas</option>
+					</optgroup>
+					<optgroup label="Premium toppings($1 each)">
+						<option value="1">Mixed Fruit</option>
+						<option value="1">Chocolate Ice Cream</option>
+						<option value="1">Vanilla Ice Cream</option>
+						<option value="1">Whipped Cream</option>
+						<option value="1">Hot Fudge</option>
+						<option value="1">Nutella Spread</option>
+						<option value="1">Peanut Butter</option>
+					</optgroup>
+			</select>
+
+		<h5><label for="drinks">Step 4: Select your drinks</label></h5>
+			<label for="drinks">Your drinks:</label>
+			<select id="drinks" multiple class="form-control col-lg-6 col">
+					<option value="drinks" disabled>---Choose drinks---</option>
+					<optgroup label="Hot Drinks">
+						<option value="coffee">Coffee</option>
+						<option value="espresso">Espresso</option>
+						<option value="caffelatte">Caff&egrave; Latte</option>
+						<option value="caffemocha">Caff&egrave; Mocha</option>
+						<option value="americano">Americano</option>
+						<option value="macchiato">Macchiato</option>
+						<option value="flatwhite">Flat White</option>
+						<option value="cappuccino">Cappuccino</option>
+						<option value="hotchocolate">Hot Chocolate</option>
+						<option value="tea">Tea</option>
+					</optgroup>
+				
+					<optgroup label="Cold Drinks">
+						<option value="water">Bottled Water</option>
+						<option value="milk">Milk</option>
+						<option value="icedcoffee">Iced Coffee</option>
+						<option value="icedlatte">Iced Latte</option>
+						<option value="coldbrew">Cold Brew Coffee</option>
+						<option value="icedcaramelmacchiato">Iced Caramel Macchiato</option>
+						<option value="icedtea">Iced Tea</option>
+						<option value="lemonade">Lemonade</option>
+					</optgroup>
+					
+					<optgroup label="Drinks Flavors">
+						<option value="hazelnut">Hazelnut</option>
+						<option value="frenchvanilla">French Vanilla</option>
+						<option value="caramel">Caramel</option>
+					</optgroup>
+					
+			</select>
+		
+		</fieldset>
+		
+		<fieldset  class="form-border col-lg-12" id="placeOrder">
+		<button id="submit" type="submit">Place Order</button>
+		</fieldset>
+		</div>
+	</form>
+
+	<footer>
+		<div id="social">
+			Follow Us On:
+			<a href="https://www.facebook.com"><img class="socialIcon" src="images/facebook_icon.svg" alt="facebook icon"></a> Facebook 
+			<a href="https://www.twitter.com"><img class="socialIcon" src="images/twitter_icon.svg" alt="twitter icon"></a> Twitter 
+			<a href="https://www.instagram.com"><img class="socialIcon" src="images/instagram_icon.svg" alt="twitter icon"></a> Instagram 
+			<a href="https://www.pinterest.com"><img class="socialIcon" src="images/pinterest_icon.svg" alt="pinterest icon"></a> Pinterest 
+		</div>
+		Copyright &copy; 2019, The Wafflez Caf&eacute;. All Rights Reserved 
+	</footer>
+</body>
+</html>

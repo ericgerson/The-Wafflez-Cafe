@@ -1,0 +1,147 @@
+<!--This is the menupage-->
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link  href="images/wafficon.ico" rel="shortcut icon" /> 
+	<title>The Wafflez Caf&eacute; - Menu</title>
+	<!--Boostrap Link-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<!--Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Carter+One|Fredoka+One|Martel" rel="stylesheet">
+	<link href="waff_layout.css" rel="stylesheet">
+	<link href="waff_menu.css" rel="stylesheet">
+	<script src="waff_menu.js" defer></script>
+</head>
+<body>
+	
+	<header>
+		<a href="waff_home.html"><img id="homeIcon"src="images/home_icon.svg" alt="home icon"></a>
+		<img src="images/waffle_logo.png" alt="logo">
+	</header>
+	
+	<nav id="horizontal">
+		<ul>
+			<a href="waff_home.html"><li class="link">About Us</li></a>
+			<a href="waff_menu.html"><li class="link">Menu</li></a>
+			<a href="waff_order.html"><li class="link">Order Online</li></a>
+			<a href="waff_contact.html"><li class="link">Contact Us</li></a>
+		</ul>
+	</nav>
+	
+	 <div id="order" class="container">
+		<h1>Menu</h1>
+		<div class="row">
+			<div class="col-lg-6" id="foodmenu">
+				<h2>Food Menu</h2>
+			</div>
+			
+			<div class="col-lg-6" id="drinkmenu">
+				<h2>Drink Menu</h2>
+			</div>
+		</div>
+		
+		
+		<div class="row">
+			<div class="col-lg-6 waffles" id="waffles">
+			<h3>Waffles</h3>
+				<ul style="font-size: 50px;">
+					<li>Classic Waffles<br/>$6.99</li>
+					<li>Belgian Waffles<br/>$7.99</li>
+					<li>Whole Grain Waffles<br/>$8.99</li>
+				</ul>
+			</div>
+			
+			<div class="col-lg-6 hotdrinks" id="hotdrinks">
+			<h3>Hot Drinks</h3>
+				<ul class="drinks" style="font-size:29px;">
+					<li>Coffee</li>
+					<li>Espresso</li>
+					<li>Caff&egrave; Latte</li>
+					<li>Caff&egrave; Mocha</li>
+					<li>Americano</li>
+					<li>Macchiato</li>
+					<li>Flat White</li>
+					<li>Cappuccino</li>
+					<li>Hot Chocolate</li>
+					<li>Tea</li>
+					<li style="list-style-type:none;">Flavors: Hazelnut, French Vanilla, Caramel</li>
+				</ul>
+			</div>	
+		</div>
+		
+		
+		<div class="row">
+			<div class="col-lg-6" id="flavors">
+			<h3>Waffle Flavors</h3>
+				<ul style="list-style-type: inherit; padding-left: 30px;">
+					<li>Chocolate Chip Waffles</li>
+					<li>Nutella Waffles</li>
+					<li>Strawberry Waffles</li>
+					<li>Blueberry Waffles</li>
+					<li>Pumpkin Waffles</li>
+					<li>Cinnamon Bun Waffles</li>
+					<li>French Toast Waffles</li>
+					<li>Banana Waffles</li>
+					<li>Red Velvet Waffles</li>
+					<li>Oreo Waffles</li>
+					<li>Peanut Butter Waffles</li>
+					<li>Brownie Batter Waffles</li>
+					<li id="dayFlavor">Flavor Of The Day: </li>
+				</ul>
+			</div>
+				<div class="col-lg-6 colddrinks" id="colddrinks">
+				<h3>Cold Drinks</h3>
+				<ul class="drinks" style="background: url(images/drink_list_background2.jpg) center/cover no-repeat; font-size:38px;">
+					<li>Bottled Water</li>
+					<li>Milk</li>
+					<li>Iced Coffee</li>
+					<li>Iced Latte</li>
+					<li>Cold Brew Coffee</li>
+					<li>Iced Caramel Macchiato</li>
+					<li>Iced Tea</li>
+					<li>Lemonade</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-lg-12" id="toppings">
+			<h3>Add Ons/Extras/Toppings</h3>
+			<h3 style="font-size:16px;"><span id="premium">*</span> - Premium Toppings($1.00 each)</h3>
+				<ul style="list-style-type: inherit; padding-left: 30px;">
+					<li>Butter</li>
+					<li>Maple Syrup</li>
+					<li>Sprinkles</li>
+					<li>Honey</li>
+					<li>Powdered Sugar</li>
+					<li>Cinnamon Sugar</li>
+					<li>Strawberries</li>
+					<li>Bananas</li>
+					<li>Mixed Fruit<span id="premium">*</span></li>
+					<li style="line-height: 1em;">Ice Cream<span id="premium">*</span><br/>(Chocolate or Vanilla)</li>
+					<li>Whipped Cream<span id="premium">*</span></li>
+					<li>Hot Fudge<span id="premium">*</span></li>
+					<li>Nutella Spread<span id="premium">*</span></li>
+					<li>Peanut Butter<span id="premium">*</span></li>
+				</ul>
+			</div>
+		</div>
+	</div> 
+
+	<a href="waff_order.html"><button class="btn btn-primary">Click here to order now</button></a>
+
+	<footer>
+
+		<div id="social">
+			Follow Us On:
+			<a href="https://www.facebook.com"><img class="socialIcon" src="images/facebook_icon.svg" alt="facebook icon"></a> Facebook 
+			<a href="https://www.twitter.com"><img class="socialIcon" src="images/twitter_icon.svg" alt="twitter icon"></a> Twitter 
+			<a href="https://www.instagram.com"><img class="socialIcon" src="images/instagram_icon.svg" alt="twitter icon"></a> Instagram 
+			<a href="https://www.pinterest.com"><img class="socialIcon" src="images/pinterest_icon.svg" alt="pinterest icon"></a> Pinterest 
+		</div>
+		Copyright &copy; 2019, The Wafflez Caf&eacute;. All Rights Reserved 
+	</footer>
+</body>
+</html>
