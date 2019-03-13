@@ -122,7 +122,8 @@ p, address{
 @media only screen and (max-width: 480px){
 	
 	body{
-	width: 90%;
+		
+		width: 90%;
 	}
 	
 	img{
@@ -159,7 +160,7 @@ p, address{
   ----------------------------------
 */
 
-@media only screen and (min-width: 480px){
+@media only screen and (min-width: 481px){
 
 	nav#horizontal ul > a{
 	width: 50%;

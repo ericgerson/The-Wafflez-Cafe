@@ -11,36 +11,48 @@
 About Us Page
 -------------------------- */
 
-h1{
+	h1{
+		
 	padding: 0px 15px;
-}
-div.container{
-	background:linear-gradient(to bottom, #ff9900 0%, #ffffcc 125%);
-	border: 1px solid black;
-}
-
-div.col-lg-6 > p{
-	text-align: justify;
-}
-
-div.container img{
-	box-shadow: 3px 3px 5px Black;
-}
-
-img#mainimage1{
-	width: 410px;
-}
-
-img#mainimage2{
-	width: 425px; 
-	box-shadow: -3px -3px 5px black;
-}
-
-div.row-lg-2 img#gal1 {
-
-width: 200px;
 	
-}
+	}
+	div.container{
+		background:linear-gradient(to bottom, #ff9900 0%, #ffffcc 125%);
+		border: 1px solid black;
+	}
+
+	div.col-lg-6 > p{
+		text-align: justify;
+	}
+
+	img#mainimage1{
+		width: 410px;
+		box-shadow: 3px 3px 5px Black;
+	}
+
+	img#mainimage2{
+		width: 425px; 
+		box-shadow: -3px -3px 5px black;
+	}
+
+	 img.collage{
+	  width: 875px;  
+	  margin-left:1.25px;
+	  margin-right: auto;
+	  max-width: 100%;
+	  height: auto;
+	  box-shadow: 3px 3px 5px Black;
+	}
+
+	img#mainimage3{
+		
+		display: none;
+	}
+	
+	img#mainimage4{
+		
+		display: none;
+	}
 
 /* -----------------------------
   Mobile Styles: 0px to 480px
@@ -48,39 +60,81 @@ width: 200px;
 */
 @media only screen and (max-width: 480px){
 	
+	
+	
 	img#mainimage1{
-		width: 300px;
-		margin-left: 5px;
-		float: right;
+		max-width: 98%;
+		height: auto;
 
 	}
 	
 	img#mainimage2{
-		width: 300px;
+		margin-left: 11px;
 		margin-top: 10px;
-		margin-left: 10px;
-		float:left
-		
-	
+		margin-bottom: 10px;
+		max-width: 98%;
+		height: auto;
+		box-shadow: 3px 3px 5px Black;
 	}
 	
-	img.gallery{
+	img.collage{
 		display:none;
 	}
+
 }
 
 
 /* --------------------------------
-  Tablet Styles: 481px and greater
+  Tablet Styles: 481px to 652px
   ----------------------------------
 */
 
-@media only screen and (min-width: 480px){
+@media only screen and (min-width: 481px) and (max-width: 652px){
+
+	img#mainimage1{
+		max-width: 100%;
+		height: auto;
+	}
+	
+	img#mainimage2{
+		max-width: 100%;
+		height: auto;
+		box-shadow: 3px 3px 5px Black;
+		margin-bottom: 10px;
+	}
 	
 	
-	img.gallery{
+	img.collage{
 		display:none;
 	}
+}
+
+/* ---------------------------------
+  Tablet Styles: 655px to 990px 
+  -----------------------------------
+*/
+
+@media only screen and (min-width: 652px) and (max-width: 992px){
+
+	img#mainimage1{
+		max-width: auto;
+		height: auto;
+		display:block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	img#mainimage2{
+		width:409px;
+		height: auto;
+		display:block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 10px;
+		box-shadow: 3px 3px 5px Black;
+	}
+
+	
 }
 
 
@@ -89,10 +143,39 @@ width: 200px;
    -----------------------------------
 */
 
+
 @media only screen and (min-width: 769px){
 	
+	img#mainimage1{
+		max-width: 100%;
+		height: auto;
+	}
 	
-	img.gallery{
+	img#mainimage2{
+		
+		max-width: 100%;
+		height: auto;
+	}
+
+}
+
+/*-----------------------------------
+   Desktop Styles: 992px to 1050
+   -----------------------------------
+*/
+@media only screen and (min-width: 992px) and (max-width: 1075px){
+
+	
+	img#mainimage3{
+		width: 315px;
+		box-shadow: 3px 3px 5px Black;
 		display:block;
 	}
+
+	img#mainimage4{
+		width: 315px; 
+		box-shadow: -3px -3px 5px black;
+		display:block;
+	}
+
 }
