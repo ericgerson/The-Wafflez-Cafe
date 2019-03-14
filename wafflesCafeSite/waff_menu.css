@@ -33,7 +33,7 @@ div.col-lg-6 > ul {
 	padding-left:20px;
 	padding-bottom: 5px;
 	text-align:center;
-	font-size: 25px;
+	font-size: 24.5px;
 	list-style-type:none;
 	background: url(images/waffle_list_background.jpg) center no-repeat;
 	color:yellow;
@@ -50,6 +50,14 @@ div.col-lg-6 > ul.drinks {
 	list-style-type: inherit; 
 	padding-left: 33px;
 }
+
+div.col-lg-6#colddrinks > ul.drinks {
+	
+    background: url(images/drink_list_background2.jpg) center/cover no-repeat; 
+	font-size:38px;
+}
+
+
 
 div.col-lg-12{
 	text-align:left;
@@ -106,13 +114,33 @@ button.btn{
 		
 		font-size: 40px;
 	}
+	
+	div.col-lg-6 > ul{
+		
+		background: linear-gradient(to bottom, #ffcc00 70%, #cc9900 100%);
+	}
+	
+	div.col-lg-6#hotdrinks > ul.drinks{
+		
+		background: linear-gradient(to bottom, #ffcc00 70%, #cc9900 100%);
+	}
+	
+	div.col-lg-6#colddrinks > ul.drinks {
+	
+		background: linear-gradient(to bottom, #ffcc00 70%, #cc9900 100%);
+	}
+	
+	div.col-lg-12 > ul {
+		
+		background: linear-gradient(to bottom, #ffcc00 70%, #cc9900 100%);
+	}
 }
 /* --------------------------------
-  Tablet Styles: 481px and greater
+  Tablet Styles: 480px and greater
   ----------------------------------
 */
 
-@media only screen and (min-width: 480px){
+@media only screen and (min-width: 481px){
 	
 	div#foodmenu{
 		display:none;
@@ -124,7 +152,7 @@ button.btn{
 	
 	div.col-lg-6.waffles ul li{
 		
-		font-size: 40px;
+		font-size: 35px;
 	}
 
 	div.col-lg-6.hotdrinks ul li{
@@ -137,6 +165,68 @@ button.btn{
 		font-size: 33px;
 	}
 	
+}
+
+/* --------------------------------
+  Tablet Styles: 481px to 495px
+  ----------------------------------
+*/
+@media only screen and (min-width: 481px) and (max-width: 495px){
+	
+	div.col-lg-6.colddrinks ul li{
+		
+		font-size: 31px;
+	}
+	
+	div.col-lg-6#flavors ul li{
+		
+		font-size: 24px;
+	}
+}
+
+/* --------------------------------
+  Tablet Styles: 481px to 532px
+  ----------------------------------
+*/
+@media only screen and (min-width: 481px) and (max-width: 532px){
+
+	div.col-lg-6.hotdrinks ul li{
+		
+		font-size: 23.75px;
+	}
+}
+
+
+
+/* --------------------------------
+  Tablet Styles: 576px and greater
+  ----------------------------------
+*/
+
+
+@media only screen and (min-width: 576px){
+	
+	
+	div.col-lg-6.waffles ul li{
+		
+		font-size: 40px;
+	}
+
+}
+
+/* --------------------------------
+  Tablet Styles: 645px and greater
+  ----------------------------------
+*/
+
+@media only screen and (min-width: 645px){
+	
+	
+	div.col-lg-6.waffles ul li{
+		
+		font-size: 42px;
+	}
+
 }
 
 
@@ -153,7 +243,8 @@ button.btn{
 	
 	div#drinkmenu{
 		display:block;
-	}
+	}  
+	
 	
 	div.col-lg-6.hotdrinks ul li{
 		
@@ -164,4 +255,17 @@ button.btn{
 		
 		font-size: 34px;
 	}
+}
+
+/*-----------------------------------
+   Desktop Styles: 992px to 1047px
+   -----------------------------------
+*/
+@media only screen and (min-width: 992px) and (max-width:1047px){
+	
+	div.col-lg-6.waffles ul li{
+		
+		font-size: 39px;
+	}
+
 }
